@@ -1,11 +1,11 @@
-# `timefmt` Homebrew Formula :beers:
+# :beers: `timefmt` Homebrew Formula
 
 > Formula to install `timefmt` via Homebrew on MacOS.
 
-## Installing :full_moon_with_face:
+## :package: Installing
 
-> :construction: This section is WIP! :construction_worker:
+> :construction: This section is WIP!
 
-## License :trollface:
+## :trollface: License
 
 MIT License - See [LICENSE](./LICENSE) for details.
