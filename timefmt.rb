@@ -12,7 +12,10 @@ class Timefmt < Formula
   sha256 "b19f232dd352b8f928bab8c70ca37ec49b5024951d657f556888a10c487bed73"
   head "https://github.com/pddstudio/timefmt.git", :branch => "develop"
 
+  bottle :unneeded
+
   def install
+    system "mv", "timefmt-macos", "timefmt"
     bin.install "timefmt"
   end
 
