@@ -19,4 +19,25 @@ class Timefmt < Formula
     bin.install "timefmt"
   end
 
+  test do
+    # Trying to spawn the cli command with 0 exit code
+    (testpath/"test.sh").write <<~EOS
+      #!/usr/bin/env bash
+
+      test_timefmt () {
+        timefmt --help &> /dev/null
+        if [ $? -eq 0 ]; then
+          echo "TEST SUCCESS"
+          exit 0
+        else
+          echo "TEST FAILED"
+          exit 1
+        fi
+      }
+
+      test_timefmt
+    EOS
+    system "chmod", "a+x", "test.sh"
+    system "./test.sh"
+  end
 end
