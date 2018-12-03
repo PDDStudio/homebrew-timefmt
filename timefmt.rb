@@ -13,7 +13,7 @@ class Timefmt < Formula
   head "https://github.com/pddstudio/timefmt.git", :branch => "develop"
 
   def install
-    bin.install "timefmt-macos"
+    bin.install "timefmt"
   end
 
 end
