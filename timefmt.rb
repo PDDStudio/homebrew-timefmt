@@ -9,7 +9,7 @@ class Timefmt < Formula
   homepage "https://github.com/pddstudio/timefmt"
   url "https://github.com/PDDStudio/timefmt/releases/download/v1.1.1/timefmt-macos-v1.1.1.tar.gz"
   version "v1.1.0"
-  sha256 "299de1286efaa706feb7637452daa31432ef194680c462df2b929f26f74d39ae"
+  sha256 "b19f232dd352b8f928bab8c70ca37ec49b5024951d657f556888a10c487bed73"
 
   def install
     brew.install "timefmt"
